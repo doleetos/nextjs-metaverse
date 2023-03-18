@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { socials } from "../constants";
+import Link from "next/link";
 
 import styles from "../styles";
 import { footerVariants } from "../utils/motion";
@@ -46,9 +47,9 @@ const Footer = () => (
           <div className="flex gap-4">
             {socials.map((social) => (
               <a
-                href={`www.${social.name}.com`}
                 target="_blank"
-                rel="noreferrer"
+                href={`https://${social.name}.com/`}
+                rel="noopener noreferrer"
               >
                 <img
                   key={social.name}
