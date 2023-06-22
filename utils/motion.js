@@ -1,7 +1,7 @@
 export const navVariants = {
   hidden: {
     opacity: 1,
-    y: 0,
+    y: -50,
     transition: {
       type: 'spring',
       stiffness: 300,
@@ -142,7 +142,7 @@ export const zoomIn = (delay, duration) => ({
 export const footerVariants = {
   hidden: {
     opacity: 1,
-    y: 0,
+    y: 50,
     transition: {
       type: 'spring',
       stiffness: 300,
